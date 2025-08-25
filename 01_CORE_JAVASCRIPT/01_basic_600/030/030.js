@@ -11,3 +11,15 @@ If "Script" appears in the string, return the string without
 
 'use strict';
 
+function check_script_string(str) {
+    let x = str.substring(4, 10);
+    if (x == 'Script') {
+        return x;
+    }
+    else {
+        return str;
+    }
+}
+
+console.log(check_script_string('JavaScript'));
+console.log(check_script_string('CoffeeScript'));
